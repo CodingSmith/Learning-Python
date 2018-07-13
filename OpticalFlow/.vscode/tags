@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+OpticalFlow.py	../OpticalFlow.py	1;"	kind:file	line:1
+blockSize	../OpticalFlow.py	/^                       blockSize = 7 )$/;"	kind:variable	line:8
+cap	../OpticalFlow.py	/^cap = cv2.VideoCapture('slow.flv')$/;"	kind:variable	line:3
+color	../OpticalFlow.py	/^color = np.random.randint(0,255,(100,3))$/;"	kind:variable	line:14
+criteria	../OpticalFlow.py	/^                  criteria = (cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 10, 0.03))$/;"	kind:variable	line:12
+cv2	../OpticalFlow.py	/^import cv2$/;"	kind:namespace	line:2
+feature_params	../OpticalFlow.py	/^feature_params = dict( maxCorners = 100,$/;"	kind:variable	line:5
+frame	../OpticalFlow.py	/^        frame = cv2.circle(frame,(a,b),5,color[i].tolist(),-1)$/;"	kind:variable	line:34
+frame_gray	../OpticalFlow.py	/^    frame_gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)$/;"	kind:variable	line:23
+img	../OpticalFlow.py	/^    img = cv2.add(frame,mask)$/;"	kind:variable	line:35
+k	../OpticalFlow.py	/^    k = cv2.waitKey(30) & 0xff$/;"	kind:variable	line:37
+lk_params	../OpticalFlow.py	/^lk_params = dict( winSize  = (15,15),$/;"	kind:variable	line:10
+mask	../OpticalFlow.py	/^        mask = cv2.line(mask, (a,b),(c,d), color[i].tolist(), 2)$/;"	kind:variable	line:33
+mask	../OpticalFlow.py	/^mask = np.zeros_like(old_frame)$/;"	kind:variable	line:20
+maxLevel	../OpticalFlow.py	/^                  maxLevel = 2,$/;"	kind:variable	line:11
+minDistance	../OpticalFlow.py	/^                       minDistance = 7,$/;"	kind:variable	line:7
+np	../OpticalFlow.py	/^import numpy as np$/;"	kind:namespace	line:1
+old_gray	../OpticalFlow.py	/^    old_gray = frame_gray.copy()$/;"	kind:variable	line:41
+old_gray	../OpticalFlow.py	/^old_gray = cv2.cvtColor(old_frame, cv2.COLOR_BGR2GRAY)$/;"	kind:variable	line:17
+p0	../OpticalFlow.py	/^    p0 = good_new.reshape(-1,1,2)$/;"	kind:variable	line:42
+p0	../OpticalFlow.py	/^p0 = cv2.goodFeaturesToTrack(old_gray, mask = None, **feature_params)$/;"	kind:variable	line:18
+qualityLevel	../OpticalFlow.py	/^                       qualityLevel = 0.3,$/;"	kind:variable	line:6
