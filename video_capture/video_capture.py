@@ -1,17 +1,18 @@
 import numpy as np
 import cv2
 
-cap = cv2.VideoCapture(r'/home/slingman/project_codes/Python/data/video/slow.flv')
+cap = cv2.VideoCapture(0)
 
 if cap.isOpened():
     print "Open Success"
-    # get fps
-    fps = cap.get(cv2.cv.CV_CAP_PROP_FPS)
     # read frame
     success, frame = cap.read()
     while success:
         cv2.imshow("Oto Video", frame)
-        cv2.waitKey(1000 / int(fps))
+        if cv2.waitKey(30) & 0xFF == ord('q'):
+            break        
         success, frame = cap.read()
+    cap.release()
+    cv2.destroyAllWindows()
 else:
     print "Open False"
